@@ -91,12 +91,14 @@ const videoObserver = new MutationObserver((mutationList, observer) => {
 	}
 });
 
+/*
 videoObserver.observe(document.body, {
 	subtree: true,
 	childList: true
 });
 
 videos.forEach(video => addRecorder(video));
+*/
 
 let mainVideoRecorder;
 chrome.runtime.onMessage.addListener(async (request, sender, sendResponse) => {
