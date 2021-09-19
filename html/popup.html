@@ -3,14 +3,28 @@
 	<head>
 		<title>Popup</title>
 		<link rel="stylesheet" href="/css/popup.css">
-		<link rel="icon" href="./img/icon.png" type="image/png">
+		<link rel="icon" href="./img/icon-32.svg" type="image/xml+svg">
 		<meta charset="utf-8">
 		<meta name="theme-color" content="#ff6400">
 		<meta name="viewport" content="width=device-width">
 		<meta name="description" content="Web VCR Settings">
 	</head>
 	<body>
-		<button id="capture-btn">Record Screen</button>
+		<div id="message"></div>
+		<form>
+			<fieldset>
+				<label>
+					<input id="media-video" type="checkbox" checked />
+					<span>video</span>
+				</label>
+				<label>
+					<input id="media-canvas" type="checkbox" />
+					<span>canvas</span>
+				</label>
+			</fieldset>
+		</form>
+		<button id="capture-btn">Start Recording</button>
+		<button id="screen-capture-btn">Start Recording Screen</button>
 		<script src="/js/popup.js" type="module"></script>
 	</body>
 </html>

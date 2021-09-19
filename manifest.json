@@ -7,11 +7,18 @@
    {
      "matches": ["*://*/*"],
      "css": ["css/styles.css"],
-     "js": ["js/content-script.js"]
+     "js": [
+       "js/video-tools.js",
+       "js/content-script.js"
+      ]
    }
   ],
   "action" : {
-    "default_icon": "img/icon.png",
+    "default_icon": "img/icon-32.png",
     "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "256": "img/icon.png",
+    "32": "img/icon-32.png"
   }
 }
